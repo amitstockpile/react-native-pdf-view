@@ -1,8 +1,10 @@
 'use strict';
-import React,{ Component, PropTypes } from 'react';
+import React,{ Component } from 'react';
+import PropTypes from 'prop-types';
+
 import { requireNativeComponent, View } from 'react-native';
 
-class PDFView extends Component {
+class PDFView extends React.Component {
   constructor(props) {
     super(props);
     this._onChange = this._onChange.bind(this);
