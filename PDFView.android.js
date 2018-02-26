@@ -1,7 +1,7 @@
 'use strict';
 import React,{ Component } from 'react';
 import PropTypes from 'prop-types';
-import { requireNativeComponent, View } from 'react-native';
+import { requireNativeComponent, View, ViewPropTypes } from 'react-native';
 
 class PDFView extends React.Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class PDFView extends React.Component {
 }
 
 PDFView.propTypes = {
-  ...View.propTypes,
+  ...ViewPropTypes,
     asset: PropTypes.string,
     src: PropTypes.string,
     pageNumber: PropTypes.number,
